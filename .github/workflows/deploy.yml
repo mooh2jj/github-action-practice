@@ -28,5 +28,5 @@ jobs:
 
       - name: Github Actions에서 환경변수 사용하기
         run: |
-          echo ${{ secrets.MY_SECRET }}
-          echo ${{ secrets.MY_SECRET2 }}
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
