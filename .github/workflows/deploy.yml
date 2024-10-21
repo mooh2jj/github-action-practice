@@ -30,3 +30,11 @@ jobs:
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+      - name: Github Actions에서 환경변수 사용하기2
+        run: |
+          echo ${{ github.sha }}
+          echo ${{ github.repository }}
+      - name: Github Actions Secrets 사용하기
+        run: |
+          echo ${{ secrets.MY_NAME }}
+          echo ${{ secrets.MY_HOBBY }}
